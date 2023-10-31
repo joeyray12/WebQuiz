@@ -159,13 +159,13 @@ var answerCheck = function(event) {
   var selectedanswer = event.target
       if (arrayShuffledQuestions[QuestionIndex].a === selectedanswer.innerText){
           answerCorrect()
-          score = score + 7
+          score = score + 10
       }
 
       else {
         answerWrong()
         score = score - 1;
-        timeleft = timeleft - 3;
+        timeleft = timeleft - 4;
     };
 
   
