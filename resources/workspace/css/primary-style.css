@@ -17,6 +17,20 @@ body {
     
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 85%;
+}
+
+.container {
+    padding: 20px;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+}
+
 p {
     color: black;
     font-size: 1.3em;
@@ -30,6 +44,12 @@ button {
     font-size: 1.3em;
 
 }
+
+#view-high-scores:hover {
+    cursor: pointer;
+    color: blue
+}
+
 
 h1, h2 {
     color: black;
@@ -81,9 +101,7 @@ li {
 
 }
 
-main {
-    display: none;
-}
+
 
 .question-box {
     display: none;
@@ -93,11 +111,52 @@ main {
     display: none;
 }
 
+#question {
+    color: var(--primary);
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
 .highscores-screen {
-    display: block;
+    display: none;
+    
 }
+
+.question-feedback  {
+    display: none;
+}
+
+.show {
+    display: flex;
+}
+
+.hide {
+    display: none;
+}
+
 
 .highscores-screen ol {
     overflow-y: scroll;
     max-height: 100px;
+}
+
+.answerbtn {
+    width: 50%;
+    text-align: left
+    
+   
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    grid-gap: 5px;
+    margin: 20px 0;
+}
+
+.btn:hover {
+    background-color: blue;
+    border-radius: 10px;
+    cursor: pointer;
 }
